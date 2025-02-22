@@ -8,6 +8,12 @@ function validate() {
 	const fPassword = document.getElementById("fPassword");
 	const fPhone = document.getElementById("fPhone");
 
+	const namePattern = /^[a-zA-ZñÑçÇáàÁÀéèÉÈíÍóòÓÒúÚ]{3,10}\s?$/;
+	const mailPattern = /^\w{3,}@{1}\w{2,}\.{1}\w{2,}/;
+	const addPattern = /\w{3,}\s*-*/;
+	const passPattern = /[a-zA-ZñÑçÇáàÁÀéèÉÈíÍóòÓÒúÚ]{3,7}\d+/;
+	const phonePattern = /\d{9}/;
+	
 	// Get the error elements
 	var errorName = document.getElementById("errorName");
 	var errorEmail = document.getElementById("errorEmail");  
