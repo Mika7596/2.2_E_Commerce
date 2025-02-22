@@ -14,7 +14,7 @@ This website is built by using HTML, CSS and JavaScript.
 
 ## INSTALLATION
 
-You can clone this repo by the following command: `git clone ddd` or you can also download the zip file and execute it on your PC.
+You can clone this repo by the following command: `git clone https://github.com/Mika7596/2.2_E_Commerce.git` or you can also download the zip file and execute it on your PC.
 
 To execute the file you only need to open the ".html" file on your browser or to "Go Live" from your code editor.
 
