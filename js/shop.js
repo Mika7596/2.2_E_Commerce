@@ -58,7 +58,12 @@ function addProduct(product){
 
 // Exercise 2
 function cleanCart() {
-
+    while (cartList.firstChild) {
+        cartList.removeChild(cartList.lastChild);
+    }
+    total = 0;
+    spanTotal.innerText = 0;
+    cart = [];
 }
 
 // Exercise 3
