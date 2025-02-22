@@ -13,10 +13,14 @@ function validate() {
 	const addPattern = /\w{3,}\s*-*/;
 	const passPattern = /[a-zA-ZñÑçÇáàÁÀéèÉÈíÍóòÓÒúÚ]{3,7}\d+/;
 	const phonePattern = /\d{9}/;
-	
+
 	// Get the error elements
-	var errorName = document.getElementById("errorName");
+	var errorfName = document.getElementById("errorfName");
 	var errorEmail = document.getElementById("errorEmail");  
+	const errorAddress = document.getElementById("errorAddress");
+	const errorLastN = document.getElementById("errorLastN");
+	const errorPassword = document.getElementById("errorPassword");
+	const errorPhone = document.getElementById("errorPhone"); 
 	
 	// Validate fields entered by the user: name, phone, password, and email
 	if(fName.value == ""){
