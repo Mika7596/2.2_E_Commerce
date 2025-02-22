@@ -61,3 +61,11 @@ form.addEventListener("submit", e =>{
 	e.preventDefault();
 	validate();
 });
+
+const inputs = document.querySelectorAll("input");
+
+for (let input of inputs){
+	input.addEventListener("change", event =>{
+		input.classList.add("on-change");
+	})
+}
