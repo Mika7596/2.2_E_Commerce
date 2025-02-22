@@ -9,7 +9,7 @@ You will be in charge of setting up an initial demo version of the application f
 
 ## FILE DETAILS
 
-This website is built by using HTML, CSS and JavaScript.
+This website is built by using HTML, CSS and JavaScript. Some Bootstrap styles are also used.
 
 
 ## INSTALLATION
