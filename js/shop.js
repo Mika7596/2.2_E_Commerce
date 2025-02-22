@@ -68,12 +68,18 @@ function cleanCart() {
 
 // Exercise 3
 function calculateTotal() {
-    // Calculate total price of the cart using the "cartList" array
+    spanTotal.innerText = total;
 }
 
 // Exercise 4
 function applyPromotionsCart() {
-    // Apply promotions to each item in the array "cart"
+    if (product.id === 1 && product.quantity >= 3) {
+        return parseFloat((product.price * product.quantity * 0.8).toFixed(2));
+    } else if (product.id === 3 && product.quantity >= 10){
+        return parseFloat((product.price * product.quantity * 0.7).toFixed(2));
+    } else{
+        return Number(product.price * product.quantity);
+    }
 }
 
 // Exercise 5
