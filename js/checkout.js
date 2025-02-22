@@ -1,10 +1,12 @@
 
 // Exercise 6
 function validate() {
-	var error = 0;
-	// Get the input fields
 	var fName = document.getElementById("fName");
 	var fEmail = document.getElementById("fEmail");
+	const fAddress = document.getElementById("fAddress");
+	const fLastName = document.getElementById("fLastN");
+	const fPassword = document.getElementById("fPassword");
+	const fPhone = document.getElementById("fPhone");
 
 	// Get the error elements
 	var errorName = document.getElementById("errorName");
