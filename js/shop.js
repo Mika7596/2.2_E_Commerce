@@ -98,8 +98,15 @@ function printCart() {
 // ** Nivell II **
 
 // Exercise 7
-function removeFromCart(id) {
-
+function removeFromCart(event) {
+    if (cart[(event.target.value)].quantity > 1){
+        cart[event.target.value].quantity --;
+        printCart();
+    } else{
+        cart.splice(((event.target.value)), 1);
+        printCart();
+    }
+    countSpan.innerHTML = cart.length;
 }
 
 function open_modal() {
