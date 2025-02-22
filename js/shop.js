@@ -1,4 +1,6 @@
 // Improved version of cartList. Cart is an array of products (objects), but each one has a quantity field to define its quantity, so these products are not repeated.
+'use strict'
+
 var cart = [];
 var total = 0;
 const spanTotal = document.getElementById( "total_price" );
@@ -55,7 +57,6 @@ function addProduct(product){
     total += totalPrice;
 }
 
-
 // Exercise 2
 function cleanCart() {
     while (cartList.firstChild) {
@@ -63,8 +64,10 @@ function cleanCart() {
     }
     total = 0;
     spanTotal.innerText = 0;
-    cart = [];
+    cart = []
 }
+
+// https://lenguajejs.com/javascript/eventos/addeventlistener-handleevent/
 
 // Exercise 3
 function calculateTotal() {
@@ -72,14 +75,14 @@ function calculateTotal() {
 }
 
 // Exercise 4
-function applyPromotionsCart() {
+function applyPromotionsCart(product) {
     if (product.id === 1 && product.quantity >= 3) {
-        return parseFloat((product.price * product.quantity * 0.8).toFixed(2));
-    } else if (product.id === 3 && product.quantity >= 10){
-        return parseFloat((product.price * product.quantity * 0.7).toFixed(2));
-    } else{
-        return Number(product.price * product.quantity);
-    }
+            return parseFloat((product.price * product.quantity * 0.8).toFixed(2));
+        } else if (product.id === 3 && product.quantity >= 10){
+            return parseFloat((product.price * product.quantity * 0.7).toFixed(2));
+        } else{
+            return Number(product.price * product.quantity)
+        }
 }
 
 // Exercise 5
@@ -91,7 +94,7 @@ function printCart() {
       spanTotal.innerText = 0;
    
      cart.forEach (product => addProduct(product));
-    calculateTotal();
+    calculateTotal();   
 }
 
 
