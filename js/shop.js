@@ -84,7 +84,14 @@ function applyPromotionsCart() {
 
 // Exercise 5
 function printCart() {
-    // Fill the shopping cart modal manipulating the shopping cart dom
+    while (cartList.firstChild) {
+        cartList.removeChild(cartList.lastChild);
+      }
+      total = 0;
+      spanTotal.innerText = 0;
+   
+     cart.forEach (product => addProduct(product));
+    calculateTotal();
 }
 
 
