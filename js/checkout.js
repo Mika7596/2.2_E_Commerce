@@ -23,18 +23,35 @@ function validate() {
 	const errorPhone = document.getElementById("errorPhone"); 
 	
 	// Validate fields entered by the user: name, phone, password, and email
-	if(fName.value == ""){
-		error++;
+	if(!namePattern.test(fName.value)){
+		errorfName.classList = "visible-error";
+		fName.classList.remove("on-change");
+		fName.classList.add("invalid-input");
 	}
-
-	if(fEmail.value == ""){
-		error++;
+	if(!mailPattern.test(fEmail.value)){
+		errorEmail.classList = "visible-error";
+		fEmail.classList.remove("on-change");
+		fEmail.classList.add("invalid-input");
 	}
-	 
-	if(error>0){
-		alert("Error");
-	}else{
-		alert("OK");
+	if(!addPattern.test(fAddress.value)){
+		errorAddress.classList = "visible-error";
+		fAddress.classList.remove("on-change");
+		fAddress.classList.add("invalid-input");
+	}
+	if (!namePattern.test(fLastName.value)){
+		errorLastN.classList = "visible-error";
+		fLastName.classList.remove("on-change");
+		fLastName.classList.add("invalid-input");
+	}
+	if (!passPattern.test(fPassword.value)){
+		errorPassword.classList = "visible-error";
+		fPassword.classList.remove("on-change");
+		fPassword.classList.add("invalid-input");
+	}
+	if (!phonePattern.test(fPhone.value)){
+		errorPhone.classList = "visible-error";
+		fPhone.classList.remove("on-change");
+		fPhone.classList.add("invalid-input");
 	}
 
 }
