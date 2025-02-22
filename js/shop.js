@@ -24,6 +24,38 @@ function buy(id) {
      countSpan.innerHTML = cart.length;
 }
 
+function addProduct(product){
+
+    let newRow = document.createElement("tr");
+    let thName = document.createElement("th");
+    thName.appendChild(document.createTextNode(product.name));
+    let quantity = document.createElement("td");
+    quantity.appendChild(document.createTextNode(product.quantity));
+    let price = document.createElement("td");
+    price.appendChild(document.createTextNode(product.price));
+    let tdTotal = document.createElement("td");
+    let totalPrice = applyPromotionsCart(product);
+    tdTotal.appendChild(document.createTextNode(totalPrice));
+    let tdReduce = document.createElement("td");
+    let buttonReduce = document.createElement ("button");
+    buttonReduce.appendChild(document.createTextNode(" - "));
+    buttonReduce.value= document.getElementsByClassName("classRow").length;
+    tdReduce.append(buttonReduce);
+    
+    newRow.append(thName);
+    newRow.append(price);
+    newRow.append(quantity);
+    newRow.append(tdTotal);
+    newRow.append(tdReduce);
+    
+    cartList.append(newRow);
+    buttonReduce.addEventListener("click", (event) => {
+        removeFromCart(event)
+      })
+    total += totalPrice;
+}
+
+
 // Exercise 2
 function cleanCart() {
 
