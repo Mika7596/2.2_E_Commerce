@@ -29,6 +29,7 @@ function buy(id) {
 function addProduct(product){
 
     let newRow = document.createElement("tr");
+    newRow.classList.add("classRow");
     let thName = document.createElement("th");
     thName.appendChild(document.createTextNode(product.name));
     let quantity = document.createElement("td");
