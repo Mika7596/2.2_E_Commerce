@@ -55,7 +55,7 @@ function addProduct(product){
     buttonReduce.addEventListener("click", (event) => {
         removeFromCart(event)
       })
-    total += totalPrice;
+    total = Number((total + totalPrice).toFixed(2));
 }
 
 // Exercise 2
