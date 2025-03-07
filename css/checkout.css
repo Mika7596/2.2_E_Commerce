@@ -1,3 +1,33 @@
+body{
+    background-color: bisque;
+}
+form{
+    background-color: rgb(247, 229, 206);
+}
+#navbar-example2{
+    background-color: rgb(245, 212, 171) !important
+}
+.nav-link:hover{
+    filter: invert(11%) sepia(58%) saturate(4716%) hue-rotate(4deg) brightness(98%) contrast(95%);
+}
+.card-hover{
+    transition-duration: 2s;
+}
+.card-hover:hover{
+    transform: scale(1.1);
+}
+.button-menu{
+    background-color: burlywood;
+    border-radius: 9px;
+    border: 2px solid burlywood;
+}
+.button-menu:hover{
+    border: 2px solid burlywood;
+    background-color: beige;
+    cursor: pointer;
+}
+
+
 .visible-error{
     display: block;
     font-size: 0.9rem;
