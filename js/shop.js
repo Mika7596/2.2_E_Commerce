@@ -43,6 +43,7 @@ function addProduct(product){
     let buttonReduce = document.createElement ("button");
     buttonReduce.appendChild(document.createTextNode(" - "));
     buttonReduce.value= document.getElementsByClassName("classRow").length;
+    buttonReduce.classList.add("button-reduce");
     tdReduce.append(buttonReduce);
     
     newRow.append(thName);
