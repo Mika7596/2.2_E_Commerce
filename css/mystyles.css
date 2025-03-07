@@ -20,3 +20,23 @@ body{
 .card-img-top:hover{
     transform: scale(1.2);  
 }
+
+.button-reduce{
+    width: 35px;
+    height: 25px;
+    font-weight: bolder;
+}
+.button-reduce, .button-menu{
+    background-color: burlywood;
+    border-radius: 9px;
+    border: 2px solid burlywood;
+}
+.button-reduce:hover, .button-menu:hover{
+    border: 2px solid burlywood;
+    background-color: beige;
+}
+.button-menu{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
