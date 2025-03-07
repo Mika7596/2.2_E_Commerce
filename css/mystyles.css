@@ -1,7 +1,4 @@
-body{
-    background-color: bisque;
-}
-.card{
+body, .card{
     background-color: bisque;
 }
 
